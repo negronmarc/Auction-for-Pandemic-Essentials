@@ -25,7 +25,6 @@ Biders.init(
         type: DataTypes.INTEGER
       },
   
-   
     sequelize,
     
     timestamps: false,
