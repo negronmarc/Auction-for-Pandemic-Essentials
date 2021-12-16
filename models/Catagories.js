@@ -2,11 +2,11 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 
-class catagories extends Model { }
+class Catagories extends Model { }
 
-Products.init(
+Catagories.init(
   {
-    product_name: {
+    product_cat_type: {
       type: DataTypes.STRING
     },
     product_category_id: {
@@ -15,15 +15,12 @@ Products.init(
     product_specification: {
       type: DataTypes.STRING
     },
-    actual_cost_in_currency: {
-      type: DataTypes.INTEGER
-    },
 
 
     sequelize,
 
     timestamps: false,
     underscored: true,
-    modelName: 'products'
+    modelName: 'Catagories'
   }
 );
