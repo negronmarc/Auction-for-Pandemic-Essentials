@@ -1,14 +1,14 @@
 const router = require("express").Router(); 
-const Bids = require("../../models/bids")
+const { Categories } = require("../../models/categories")
 
 router.post("/", async (req, res) => {
   try {
-    const newBids = await Bids.create({
+    const newCategories = await Categories.create({
       ...req.body,
       user_id: req.session.user_id,
     });
 
-    res.status(200).json(newBids);
+    res.status(200).json(newCategories);
   } catch (err) {
     res.status(400).json(err);
   }
