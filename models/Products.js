@@ -9,6 +9,7 @@ Products.init(
     Id:{
       type: DataTypes.INTEGER,
       allowNull: false,
+      primaryKey: true,
       autoIncrement: true,
     },
     Name:{
