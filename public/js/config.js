@@ -46,7 +46,7 @@ module.exports = {
 
         if(configs.length == 1) {
           var c = configs[0];
-          if(options.currentcy_code) c.currency_code == options.currency_code;
+          if(options.currency_code) c.currency_code == options.currency_code;
           if(options.max_watch_list) c.max_watch_list = options.max_watch_list;
           if(options.max_bid_count) c.max_bid_count = options.max_bid_count;
           if(options.max_offer_count) c.max_offer_count = options.max_offer_count;

@@ -17,11 +17,11 @@
   </header>
   <nav>
     <a href="/">Home</a>
-    <!-- If the user is logged in, show a logout button -->
+    
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
-    <!-- Otherwise, show a link to login -->
+    
     <a href="public/js/login.js">Login</a>
     {{/if}}
   </nav>
@@ -33,7 +33,7 @@
       {{{body}}}
     </div>
   </main>
-  <!-- If the user is logged in, load the JS script for when they logout -->
+  
   {{#if loggedIn}}
   <script src="public/js/logout.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
