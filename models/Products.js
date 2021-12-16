@@ -24,6 +24,6 @@ Products.init(
 
     timestamps: false,
     underscored: true,
-    modelName: 'products'
+    modelName: 'Products'
   }
 );

@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 
-class BidOrder extends Model { }
+class Bids extends Model { }
 
-BidOrder.init(
+Bids.init(
     {
         product_id: {
             type: DataTypes.STRING
@@ -34,6 +34,6 @@ BidOrder.init(
 
         timestamps: false,
         underscored: true,
-        modelName: 'biders'
+        modelName: 'Bids'
     }
 );

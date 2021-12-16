@@ -15,6 +15,7 @@ var ConfigSchema = new Schema({
   image_type: {type: [String], default: ['jpg', 'png']},// allowed type of image
   step_price: {type: Number, default: 1}           // step price value for bidding
 });
+
 var Config = mongoose.model('Configuration', ConfigSchema)
 
 function createConfig(options = {}) {
