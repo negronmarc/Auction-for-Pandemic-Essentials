@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 
-class Biders extends Model {}
+class Bidders extends Model {}
 
-Biders.init(
+Bidders.init(
   {
     first_name: {
       type: DataTypes.STRING
@@ -30,6 +30,6 @@ Biders.init(
     
     timestamps: false,
     underscored: true,
-    modelName: 'biders'
+    modelName: 'Bidders'
   }
 );
