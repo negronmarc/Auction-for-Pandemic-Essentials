@@ -1,35 +1,71 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const bcrypt = require("bcrypt");
+const sequelize = require("../config/connection");
 
+class User extends Model {
+  checkPassword(loginPw) {
+    return bcrypt.compareSync(loginPw, this.password);
+  }
+}
 
 class Bidders extends Model {}
 
 Bidders.init(
+User.init(
   {
-    first_name: {
-      type: DataTypes.STRING
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
     },
-    last_name: {
-      type: DataTypes.STRING
-    },
-    user_name: {
-      type: DataTypes.STRING
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     email: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
     },
-    pwd_enc: {
-        type: DataTypes.STRING
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [8],
       },
+    },
     current_bid: {
-        type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+    },
+  },
+  {
+    hooks: {
+      beforeCreate: async (newUserData) => {
+        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        return newUserData;
       },
-  
-   
+      beforeUpdate: async (updatedUserData) => {
+        updatedUserData.password = await bcrypt.hash(
+          updatedUserData.password,
+          10
+        );
+        return updatedUserData;
+      },
+    },
     sequelize,
-    
     timestamps: false,
+    freezeTableName: true,
     underscored: true,
+<<<<<<< HEAD
     modelName: 'Bidders'
+=======
+    modelName: "user",
+>>>>>>> 7806a00350265c29002ceace473988fa6d8110cc
   }
 );
+
+module.exports = User;
