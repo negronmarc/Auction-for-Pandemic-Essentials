@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
+
+
+class Catagories extends Model { }
+
+Catagories.init(
+    {
+        Id:{
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,
+        },
+        Category:{
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,
+        },
+
+        sequelize,
+
+        timestamps: false,
+        underscored: true,
+        modelName: 'Catagories'
+    }
+);
+=======
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
@@ -31,3 +61,4 @@ Categories.init({
 });
 
 module.exports = Categories;
+>>>>>>> ae575f4acc1752882b66371efc13cd36720bd1c6
