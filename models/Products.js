@@ -6,12 +6,12 @@ class Products extends Model { }
 
 Products.init(
   {
-    Id: {
+    Id:{
       type: DataTypes.INTEGER,
       allowNull: false,
       autoIncrement: true,
     },
-    Name: {
+    Name:{
       type: DataTypes.VARCHAR,
       allowNull: false,
       autoIncrement: true,
