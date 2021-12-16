@@ -6,25 +6,18 @@ class Catagories extends Model { }
 
 Catagories.init(
     {
-        product_cat_type: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true,
-        },
-        product_category_id: {
+        Id:{
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
-        product_specification: {
-            type: DataTypes.STRING,
+        Category:{
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
-
 
         sequelize,
 
