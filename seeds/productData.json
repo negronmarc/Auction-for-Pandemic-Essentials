@@ -4,12 +4,11 @@
       "Id": 101,
       "Name": "Black Disposable Face Masks",
       "Starting_price": "12.99",
-      "Current_bid": "0",
-      "Description": "",
+      "Current_bid": 0,
+      "Description": "protective face covering from viruses",
       "Image": "",
-      "Bid_count": "",
-      "Category_id": "",
-      "Current_bidder_id": ""
+      "Bid_count": 0,
+      "Category_id": 100
     },
     {
       "Id": 102,
@@ -19,8 +18,7 @@
       "Description": "",
       "Image": "",
       "Bid_count": "",
-      "Category_id": "",
-      "Current_bidder_id": ""
+      "Category_id": ""
     },
     {
       "Id": 103,
@@ -30,8 +28,7 @@
       "Description": "",
       "Image": "",
       "Bid_count": "",
-      "Category_id": "",
-      "Current_bidder_id": ""
+      "Category_id": ""
     },
     {
       "Id": 104,
@@ -41,8 +38,7 @@
       "Description": "",
       "Image": "",
       "Bid_count": "",
-      "Category_id": "",
-      "Current_bidder_id": ""
+      "Category_id": ""
     },
     {
       "Id": 105,
@@ -52,7 +48,6 @@
       "Description": "",
       "Image": "",
       "Bid_count": "",
-      "Category_id": "",
-      "Current_bidder_id": ""
+      "Category_id": ""
     }
   ]
