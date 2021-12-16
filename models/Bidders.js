@@ -60,11 +60,7 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-<<<<<<< HEAD
-    modelName: 'Bidders'
-=======
     modelName: "user",
->>>>>>> 7806a00350265c29002ceace473988fa6d8110cc
   }
 );
 
