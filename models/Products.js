@@ -6,24 +6,56 @@ class Products extends Model { }
 
 Products.init(
   {
-    product_name: {
-      type: DataTypes.STRING
+    Id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
     },
-    product_category_id: {
-      type: DataTypes.INTEGER
+    Name: {
+      type: DataTypes.VARCHAR,
+      allowNull: false,
+      autoIncrement: true,
     },
-    product_specification: {
-      type: DataTypes.STRING
+    Starting_price: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
     },
-    actual_cost_in_currency: {
-      type: DataTypes.INTEGER
+    Current_bid: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
     },
-
+    Description: {
+      type: DataTypes.VARCHAR,
+      allowNull: false,
+      autoIncrement: true,
+    },
+    Image: {
+      type: DataTypes.VARCHAR,
+      allowNull: false,
+      autoIncrement: true,
+    },
+    Bid_count: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
+    },
+    Category_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
+    },
+    Current_bidder_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
+    },
 
     sequelize,
 
     timestamps: false,
     underscored: true,
-    modelName: 'Products'
+    modelName: 'Products',
   }
 );
