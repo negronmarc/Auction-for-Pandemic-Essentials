@@ -14,7 +14,7 @@ Catagories.init({
     type: DataTypes.INTEGER,
     allowNull: false,
   },
-
+  
   sequelize,
 
   timestamps: false,
