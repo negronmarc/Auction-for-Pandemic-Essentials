@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require("sequelize");
+const { Sequelize, Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
@@ -8,31 +8,34 @@ class User extends Model {
   }
 }
 
-User.init({
-  id: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    primaryKey: true,
-    autoIncrement: true,
+User.init(
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
-  username: {
-    type: DataTypes.VARCHAR,
-    allowNull: false,
-  },
-  email: {
-    type: DataTypes.VARCHAR,
-    allowNull: false,
-  },
-  password: {
-    type: DataTypes.VARCHAR,
-    allowNull: false,
-  },
+  {
+    sequelize,
 
-  sequelize,
-
-  timestamps: false,
-  underscored: true,
-  modelName: "User",
-});
+    timestamps: false,
+    underscored: true,
+    modelName: "User",
+  }
+);
 
 module.exports = User;
