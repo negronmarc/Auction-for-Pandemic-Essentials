@@ -1,8 +1,19 @@
 [
     {
-        "id": 301,
-        "name": "Joe Smith",
-        "email": "Jmaneira@aol.com",
+        "name": "Marc Smith",
+        "email": "marcmarcy@aol.com",
+        "password": "password12345"
+
+    },
+    {
+        "name": "Scott Glenn",
+        "email": "scottyglen@aol.com",
+        "password": "password12345"
+
+    },
+    {
+        "name": "Joe Jones",
+        "email": "jj@aol.com",
         "password": "password12345"
 
     }
