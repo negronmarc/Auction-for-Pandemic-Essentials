@@ -1,53 +1,48 @@
 [
 
     {
-      "Id": 101,
-      "Name": "Black Disposable Face Masks",
-      "Starting_price": "$12.99",
-      "Current_bid": 0,
-      "Description": "protective face covering from viruses",
-      "Image": "",
-      "Bid_count": 0,
-      "Category_id": 100
+      "name": "Black Disposable Face Masks",
+      "starting_price": 12.99,
+      "current_bid": 0,
+      "description": "protective face covering from viruses",
+      "image": "",
+      "bid_count": 0,
+      "category_id": 1
     },
     {
-      "Id": 102,
-      "Name": "Germ-X Original Hand Sanitizer, with Pump, 8Fl Oz (12 Pack)",
-      "Starting_price": "$30.99",
-      "Current_bid": 0,
-      "Description": "The Best in Hand Sanitizer on the market the name says it all people",
-      "Image": "",
-      "Bid_count": 0,
-      "Category_id": 100
+      "name": "Germ-X Original Hand Sanitizer, with Pump, 8Fl Oz (12 Pack)",
+      "starting_price": 30.99,
+      "current_bid": 0,
+      "description": "The Best in Hand Sanitizer on the market the name says it all people",
+      "image": "",
+      "bid_count": 0,
+      "category_id": 2
     },
     {
-      "Id": 103,
-      "Name": "Cottonelle Ultra 24 Family Mega Rolls",
-      "Starting_price": "$25.18",
-      "Current_bid": 0,
-      "Description": "toilet paper with active Cleaning Ripples, 24 Family Mega Rolls, Strong bath tissue ",
-      "Image": "",
-      "Bid_count": 0,
-      "Category_id": 100
+      "name": "Cottonelle Ultra 24 Family Mega Rolls",
+      "starting_price": 25.18,
+      "current_bid": 0,
+      "description": "toilet paper with active Cleaning Ripples, 24 Family Mega Rolls, Strong bath tissue ",
+      "image": "",
+      "bid_count": 0,
+      "category_id": 2
     },
     {
-      "Id": 104,
-      "Name": "Purell Hand Sanitizing Wipes",
-      "Starting_price": "$16.99",
-      "Current_bid": 0,
-      "Description": "Clean refreshing scent from(Pack of 6)",
-      "Image": "",
-      "Bid_count": 0,
-      "Category_id": 200
+      "name": "Purell Hand Sanitizing Wipes",
+      "starting_price": 16.99,
+      "current_bid": 0,
+      "description": "Clean refreshing scent from(Pack of 6)",
+      "image": "",
+      "bid_count": 0,
+      "category_id": 2
     },
     {
-      "Id": 105,
-      "Name": "Clorox HE Performance Bleach",
-      "Starting_price": "$15.50",
-      "Current_bid": 0,
-      "Description": "its BLEACH must i really explain?",
-      "Image": "",
-      "Bid_count": 0,
-      "Category_id": 100
+      "name": "Clorox HE Performance Bleach",
+      "starting_price": 15.50,
+      "current_bid": 0,
+      "description": "its BLEACH must i really explain?",
+      "image": "",
+      "bid_count": 0,
+      "category_id": 2
     }
   ]

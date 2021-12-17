@@ -12,16 +12,15 @@ Category.init(
       autoIncrement: true,
     },
     category: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },
   {
     sequelize,
-
     timestamps: false,
     underscored: true,
-    modelName: "Category",
+    modelName: "category",
   }
 );
 

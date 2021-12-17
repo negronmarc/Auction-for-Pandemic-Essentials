@@ -10,21 +10,21 @@ const seedDatabase = async () => {
 
   // Create a database or table for users   
   // Assign this return data to a const var users
-
+  for (const user of userData) {
+    await User.create(user);
+  }
   // Create a database table for category
   // Assign this return data to a const var Category
-
+  for (const category of categoryData) {
+    await Category.create(category);
+  }
   // Loop through product data for each products 
   // For each product pick random user primary key and random category primary key
   // Assign it to foreign key user_id and category_id respectively 
 
   for (const product of productData) {
-    await Product.create({
-      ...product,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
+    await Product.create(product);
   }
-
   process.exit(0);
 };
 

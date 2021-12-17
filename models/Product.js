@@ -21,7 +21,6 @@ Product.init(
     },
     current_bid: {
       type: DataTypes.INTEGER,
-      allowNull: false,
     },
     description: {
       type: DataTypes.STRING,
@@ -33,23 +32,20 @@ Product.init(
     },
     bid_count: {
       type: DataTypes.INTEGER,
-      allowNull: false,
     },
     category_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+     allowNull: false,
     },
     current_bidder_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
     },
   },
   {
     sequelize,
-
     timestamps: false,
     underscored: true,
-    modelName: "Product",
+    modelName: "product",
   }
 );
 
