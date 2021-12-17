@@ -15,19 +15,16 @@ Users.init(
         Username: {
             type: DataTypes.VARCHAR,
             allowNull: false,
-            primaryKey: true,
             autoIncrement: true,
         },
         Email: {
             type: DataTypes.VARCHAR,
             allowNull: false,
-            primaryKey: true,
             autoIncrement: true,
         },
         Password: {
             type: DataTypes.VARCHAR,
             allowNull: false,
-            primaryKey: true,
             autoIncrement: true,
         },
 

@@ -3,56 +3,51 @@
     {
       "Id": 101,
       "Name": "Black Disposable Face Masks",
-      "Starting_price": "12.99",
-      "Current_bid": "0",
-      "Description": "",
+      "Starting_price": "$12.99",
+      "Current_bid": 0,
+      "Description": "protective face covering from viruses",
       "Image": "",
-      "Bid_count": "",
-      "Category_id": "",
-      "Current_bidder_id": ""
+      "Bid_count": 0,
+      "Category_id": 100
     },
     {
       "Id": 102,
-      "Name": "",
-      "Starting_price": "",
-      "Current_bid": "",
-      "Description": "",
+      "Name": "Germ-X Original Hand Sanitizer, with Pump, 8Fl Oz (12 Pack)",
+      "Starting_price": "$30.99",
+      "Current_bid": 0,
+      "Description": "The Best in Hand Sanitizer on the market the name says it all people",
       "Image": "",
-      "Bid_count": "",
-      "Category_id": "",
-      "Current_bidder_id": ""
+      "Bid_count": 0,
+      "Category_id": 100
     },
     {
       "Id": 103,
-      "Name": "",
-      "Starting_price": "",
-      "Current_bid": "",
-      "Description": "",
+      "Name": "Cottonelle Ultra 24 Family Mega Rolls",
+      "Starting_price": "$25.18",
+      "Current_bid": 0,
+      "Description": "toilet paper with active Cleaning Ripples, 24 Family Mega Rolls, Strong bath tissue ",
       "Image": "",
-      "Bid_count": "",
-      "Category_id": "",
-      "Current_bidder_id": ""
+      "Bid_count": 0,
+      "Category_id": 100
     },
     {
       "Id": 104,
-      "Name": "",
-      "Starting_price": "",
-      "Current_bid": "",
-      "Description": "",
+      "Name": "Purell Hand Sanitizing Wipes",
+      "Starting_price": "$16.99",
+      "Current_bid": 0,
+      "Description": "Clean refreshing scent from(Pack of 6)",
       "Image": "",
-      "Bid_count": "",
-      "Category_id": "",
-      "Current_bidder_id": ""
+      "Bid_count": 0,
+      "Category_id": 100
     },
     {
       "Id": 105,
-      "Name": "",
-      "Starting_price": "",
-      "Current_bid": "",
-      "Description": "",
+      "Name": "Clorox HE Performance Bleach",
+      "Starting_price": "$15.50",
+      "Current_bid": 0,
+      "Description": "its BLEACH must i really explain?",
       "Image": "",
-      "Bid_count": "",
-      "Category_id": "",
-      "Current_bidder_id": ""
+      "Bid_count": 0,
+      "Category_id": 100
     }
   ]
