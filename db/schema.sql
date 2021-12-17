@@ -1,8 +1,8 @@
 CREATE DATABASE IF NOT EXISTS auction;
 USE auction;
 
-Drop table if exists catagories;
-CREATE TABLE catagories (
+Drop table if exists categories;
+CREATE TABLE categories (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     cat_name VARCHAR(255) NOT NULL,
     cat_id INT NOT NULL,
