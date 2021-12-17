@@ -1,5 +1,5 @@
 
-{{#if loggedIn}}
+{{!-- {{#if loggedIn}} --}}
 {{#each products}}
 <section class="product">
   <img src="/images/{{filename}}" alt="{{description}}">
@@ -15,6 +15,6 @@
   </div>
 </section>
 {{/each}}
-{{else}}
+{{!-- {{else}} --}}
 <a href="/login">You must login first to bid on this product</a>
-{{/if}}
+{{!-- {{/if}} --}}
