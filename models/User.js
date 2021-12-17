@@ -1,39 +1,38 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const bcrypt = require("bcrypt");
+const sequelize = require("../config/connection");
 
+class User extends Model {
+  checkPassword(loginPw) {
+    return bcrypt.compareSync(loginPw, this.password);
+  }
+}
 
-class Users extends Model { }
+User.init({
+  id: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    primaryKey: true,
+    autoIncrement: true,
+  },
+  username: {
+    type: DataTypes.VARCHAR,
+    allowNull: false,
+  },
+  email: {
+    type: DataTypes.VARCHAR,
+    allowNull: false,
+  },
+  password: {
+    type: DataTypes.VARCHAR,
+    allowNull: false,
+  },
 
-Users.init(
-    {
-        Id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true,
-        },
-        Username: {
-            type: DataTypes.VARCHAR,
-            allowNull: false,
-            autoIncrement: true,
-        },
-        Email: {
-            type: DataTypes.VARCHAR,
-            allowNull: false,
-            autoIncrement: true,
-        },
-        Password: {
-            type: DataTypes.VARCHAR,
-            allowNull: false,
-            autoIncrement: true,
-        },
+  sequelize,
 
+  timestamps: false,
+  underscored: true,
+  modelName: "User",
+});
 
-
-        sequelize,
-
-        timestamps: false,
-        underscored: true,
-        modelName: 'Users'
-    }
-);
+module.exports = User;
