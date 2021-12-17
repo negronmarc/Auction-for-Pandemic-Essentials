@@ -1,7 +1,9 @@
 const sequelize = require('../config/connection');
-const { Categories, Products, User } = require('../models');
+const { Category, Product, User } = require('../models');
 
 const productData = require('./productData.json');
+const categoryData = require('./categoryData.json');
+const userData = require('./userData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -10,7 +12,7 @@ const seedDatabase = async () => {
   // Assign this return data to a const var users
 
   // Create a database table for category
-  // Assign this return data to a const var categories
+  // Assign this return data to a const var Category
 
   // Loop through product data for each products 
   // For each product pick random user primary key and random category primary key
