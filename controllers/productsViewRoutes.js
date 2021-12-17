@@ -9,3 +9,4 @@ router.get("/", (req, res) => {
     const product = dbProductData.map((product) => product.get({plain:true}))
     res.render("product", {product})
 });
+module.exports = router;
