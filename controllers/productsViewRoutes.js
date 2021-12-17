@@ -1,11 +1,11 @@
 const router = require("express").Router(); 
-const { Products } = require("../models");
+const { Product } = require("../models");
 
 router.get("/", (req, res) => {
-    Products.findAll({
+    Product.findAll({
         where: {userId: req.session.userId}
     });
 }).then (dbProductData => {
-    const products = dbProductData.map((product) => product.get({plain:true}))
-    res.render("products", {products})
+    const product = dbProductData.map((product) => product.get({plain:true}))
+    res.render("product", {product})
 });
