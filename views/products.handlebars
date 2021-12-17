@@ -1,14 +1,20 @@
-<!-- If the user is logged in, render the painting content -->
+
 {{#if loggedIn}}
+{{#each products}}
 <section class="product">
-  <img src="/images/{{product.filename}}" alt="{{product.description}}">
+  <img src="/images/{{filename}}" alt="{{description}}">
   <div class="product-details">
-    <h3>{{product.title}}</h3>
-    <p>Posted By: {{product.seller}}</p>
-    <p>Auction open until: {{ format_date product.auction_date}}</p>
+    <h3>{{name}}</h3>
+    <h3>{{starting_price}}</h3>
+    <h3>{{current_bid}}</h3>
+    <h3>{{bid_count}}</h3>
+    <h3>{{category_id}}</h3>
+    <h3>{{current_bidder_id}}</h3>
+
+    <p>Auction open until: {{ format_date auction_date}}</p>
   </div>
 </section>
-<!-- Otherwise, provide a link to login -->
+{{/each}}
 {{else}}
 <a href="/login">You must login first to bid on this product</a>
 {{/if}}

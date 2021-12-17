@@ -1,8 +1,9 @@
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 
 mongoose.Promise = global.Promise;
 
 var Schema = mongoose.Schema;
+
 
 
 var AuctionSchema = new Schema({
@@ -26,25 +27,11 @@ var Auction = mongoose.model('Configuration', AuctionSchema)
 
 function createAuction(options = {}) {
   return new Promise(function(resolve, reject) {
-    var c = {};
-    if(options.currency_code) c.currency_code = options.currency_code;
-    if(options.max_watch_list) c.max_watch_list = options.max_watch_list;
-    if(options.max_bid_count) c.max_bid_count = options.max_bid_count;
-    if(options.max_offer_count) c.max_offer_count = options.max_offer_count;
-    if(options.default_duration) c.default_duration = options.default_duration;
-    if(options.image_size) c.image_size = options.image_size;
-    if(options.max_image_count) c.max_image_count = options.max_image_count;
-    if(options.image_type) c.image_type = options.image_type;
-    if(options.step_price) c.step_price = options.step_price;
 
-    auction.create(c, function(err, config) {
-      if(err) reject(err);
-      else resolve(config);
-    });
-  });
-}
+
 
 module.exports = {
+
   setAuction: function(options = {}) {
     return new Promise(function(resolve, reject) {
       Auction.find({}, function(err, auction) {
@@ -62,10 +49,12 @@ module.exports = {
           if(options.image_type) c.image_type = options.image_type;
           if(options.step_price) c.step_price = options.step_price;
 
-          c.save(function(err) {
-            if(err) reject(err);
+
+          c.save(function (err) {
+            if (err) reject(err);
             else resolve(c);
           });
+
 
         } else if(auction.length > 1) {
           Auction.remove({}, function(err) {
@@ -74,18 +63,21 @@ module.exports = {
             createAuction(options).then(
               function(c) {
                 resolve(c)
+
               },
-              function(err) {
+              function (err) {
                 reject(err);
               }
             );
           });
         } else {
+
           createAuction(options).then(
             function(c) {
               resolve(c)
+
             },
-            function(err) {
+            function (err) {
               reject(err);
             }
           );
@@ -93,6 +85,7 @@ module.exports = {
       });
     });
   },
+
 
   loadAuction: function() {
     return new Promise(function(resolve, reject) {
@@ -103,15 +96,20 @@ module.exports = {
           createAuction({}).then(
             function(c) {
               resolve(c)
+
             },
-            function(err) {
+            function (err) {
               reject(err);
             }
           );
+
         } else if(auction.length == 1) {
           resolve(auction[0]);
+
+
+
         }
       });
     });
-  }
-}
+  },
+};
