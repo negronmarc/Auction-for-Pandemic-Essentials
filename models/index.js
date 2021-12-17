@@ -11,8 +11,10 @@ Products.belongsTo(User, {
   foreignKey: "user_id",
 });
 
-Categories.belongsTo(Products, {
+Categories.hasMany(Products, {
   foreignKey: "product_id",
 });
-
+Products.belongsTo(Categories,{
+  foreignKey: "category_id"
+})
 module.exports = { User, Products, Categories };
