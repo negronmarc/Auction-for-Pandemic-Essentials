@@ -1,9 +1,9 @@
 const router = require("express").Router(); 
 const { Product } = require("../models");
 
-router.get("/products", async (req, res) => {
- const products = Product.findAll();
-    res.render("products", products)
+router.get("/product", async (req, res) => {
+ const product = Product.findAll();
+    res.render("product", product)
 });
 
 
