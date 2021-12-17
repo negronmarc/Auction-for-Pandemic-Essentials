@@ -3,11 +3,7 @@ const express = require("express");
 const session = require("express-session");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers");
-<<<<<<< HEAD
 // const helpers = require("./utils/helpers");
-=======
-//const helpers = require("./utils/helpers");
->>>>>>> e1a842cb9f8bbb3afa1b19583b410a74af448858
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
