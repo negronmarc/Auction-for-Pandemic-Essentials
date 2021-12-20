@@ -2,7 +2,7 @@
 {{!-- {{#if loggedIn}} --}}
 
 <section class="product">
-  <img src="/images/{{filename}}" alt="{{description}}">
+  <img src="../../public/images/{{product.image}}.jpg" alt="">
   <div class="product-details">
     <h3>{{product.name}}</h3>
     <h3>{{product.starting_price}}</h3>
@@ -14,5 +14,5 @@
   </div>
 </section>
 {{!-- {{else}} --}}
-<a href="../public/js/login.js">You must login first to bid on this product</a>
+<a href="/js/login.js">You must login first to bid on this product</a>
 {{!-- {{/if}} --}}
