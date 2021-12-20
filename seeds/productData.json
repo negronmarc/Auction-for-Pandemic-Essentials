@@ -1,48 +1,47 @@
 [
-
-    {
-      "name": "Black Disposable Face Masks",
-      "starting_price": 12.99,
-      "current_bid": 0,
-      "description": "protective face covering from viruses",
-      "image": "",
-      "bid_count": 0,
-      "category_id": 1
-    },
-    {
-      "name": "Germ-X Original Hand Sanitizer, with Pump, 8Fl Oz (12 Pack)",
-      "starting_price": 30.99,
-      "current_bid": 0,
-      "description": "The Best in Hand Sanitizer on the market the name says it all people",
-      "image": "",
-      "bid_count": 0,
-      "category_id": 2
-    },
-    {
-      "name": "Cottonelle Ultra 24 Family Mega Rolls",
-      "starting_price": 25.18,
-      "current_bid": 0,
-      "description": "toilet paper with active Cleaning Ripples, 24 Family Mega Rolls, Strong bath tissue ",
-      "image": "",
-      "bid_count": 0,
-      "category_id": 2
-    },
-    {
-      "name": "Purell Hand Sanitizing Wipes",
-      "starting_price": 16.99,
-      "current_bid": 0,
-      "description": "Clean refreshing scent from(Pack of 6)",
-      "image": "",
-      "bid_count": 0,
-      "category_id": 2
-    },
-    {
-      "name": "Clorox HE Performance Bleach",
-      "starting_price": 15.50,
-      "current_bid": 0,
-      "description": "its BLEACH must i really explain?",
-      "image": "",
-      "bid_count": 0,
-      "category_id": 2
-    }
-  ]
+  {
+    "name": "Black Disposable Face Masks",
+    "starting_price": 12.99,
+    "current_bid": 0,
+    "description": "protective face covering from viruses",
+    "image": "",
+    "bid_count": 0,
+    "category_id": 1
+  },
+  {
+    "name": "Germ-X Original Hand Sanitizer, with Pump, 8Fl Oz (12 Pack)",
+    "starting_price": 30.99,
+    "current_bid": 0,
+    "description": "The Best in Hand Sanitizer on the market the name says it all people",
+    "image": "",
+    "bid_count": 0,
+    "category_id": 2
+  },
+  {
+    "name": "Cottonelle Ultra 24 Family Mega Rolls",
+    "starting_price": 25.18,
+    "current_bid": 0,
+    "description": "toilet paper with active Cleaning Ripples, 24 Family Mega Rolls, Strong bath tissue ",
+    "image": "",
+    "bid_count": 0,
+    "category_id": 2
+  },
+  {
+    "name": "Purell Hand Sanitizing Wipes",
+    "starting_price": 16.99,
+    "current_bid": 0,
+    "description": "Clean refreshing scent from(Pack of 6)",
+    "image": "",
+    "bid_count": 0,
+    "category_id": 2
+  },
+  {
+    "name": "Clorox HE Performance Bleach",
+    "starting_price": 15.5,
+    "current_bid": 0,
+    "description": "its BLEACH must i really explain?",
+    "image": "",
+    "bid_count": 0,
+    "category_id": 2
+  }
+]

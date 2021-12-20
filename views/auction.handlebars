@@ -1,20 +1,18 @@
 
-{{#if loggedIn}}
-{{#each products}}
+{{!-- {{#if loggedIn}} --}}
+
 <section class="product">
-  <img src="/images/{{filename}}" alt="{{description}}">
+  {{!-- <img src="/images/{{filename}}" alt="{{description}}"> --}}
   <div class="product-details">
-    <h3>{{name}}</h3>
-    <h3>{{starting_price}}</h3>
-    <h3>{{current_bid}}</h3>
+    <h3>{{product.name}}</h3>
+    <h3>{{product.starting_price}}</h3>
+    <h3>{{product.current_bid}}</h3>
     <h3>{{bid_count}}</h3>
     <h3>{{category_id}}</h3>
     <h3>{{current_bidder_id}}</h3>
-
-    <p>Auction open until: {{ format_date auction_date}}</p>
+    {{!-- <p>Auction open until: {{ format_date auction_date }}</p> --}}
   </div>
 </section>
-{{/each}}
-{{else}}
-<a href="/login">You must login first to bid on this product</a>
-{{/if}}
+{{!-- {{else}} --}}
+<a href="../public/js/login.js">You must login first to bid on this product</a>
+{{!-- {{/if}} --}}
