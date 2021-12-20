@@ -4,7 +4,7 @@
     "starting_price": 12.99,
     "current_bid": 0,
     "description": "protective face covering from viruses",
-    "image": "",
+    "image": "black-masks",
     "bid_count": 0,
     "category_id": 1
   },
@@ -22,7 +22,7 @@
     "starting_price": 25.18,
     "current_bid": 0,
     "description": "toilet paper with active Cleaning Ripples, 24 Family Mega Rolls, Strong bath tissue ",
-    "image": "public/images/01-tp-funny.jpeg",
+    "image": "",
     "bid_count": 0,
     "category_id": 2
   },
