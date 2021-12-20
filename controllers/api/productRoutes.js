@@ -1,17 +1,11 @@
 const router = require("express").Router();
 const { Product } = require("../../models");
 
-
-
-
-router.post("/", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
-    const newProduct = await Product.create({
-      ...req.body,
-      user_id: req.session.user_id,
-    });
+    const productData = await Product.findAll();
 
-    res.status(200).json(newProduct);
+    res.status(200).json(productData);
   } catch (err) {
     res.status(400).json(err);
   }
