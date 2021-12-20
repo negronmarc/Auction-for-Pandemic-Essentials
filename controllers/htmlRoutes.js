@@ -8,25 +8,6 @@ router.get("/product", async (req, res) => {
 
 // router GET /login render the login page
 
-router.get("/profile", withAuth, async (req, res) => {
-  try {
-    // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ["password"] },
-      include: [{ model: Project }],
-    });
-
-    const user = userData.get({ plain: true });
-
-    res.render("profile", {
-      ...user,
-      logged_in: true,
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {
     res.redirect("/profile");
@@ -37,38 +18,26 @@ router.get("/login", (req, res) => {
 });
 
 //router GET /auction render the auction page whatever page has all the products
-router
-  .get("/products", (req, res) => {
-    Product.findAll({
-      where: { userId: req.session.userId },
-    });
-  })
-  .then((dbProductData) => {
-    const products = dbProductData.map((product) =>
-      product.get({ plain: true })
-    );
-    res.render("products", { products });
-  });
-module.exports = router;
+router.get("/products", async (req, res) => {
+//  const dbProductData = await Product.findAll();
+  const products = await Product.findAll();
 
-//router GET /singleproduct render a page with a single product
-router.get("/singleproduct/:id", async (req, res) => {
+  //const products = await dbProductData.get({ plain: true })
+  res.render("products", { products });
+});
+
+//router GET /auction render a page with a single product
+router.get("/auction/:id", async (req, res) => {
   try {
-    const auctionData = await Product.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ["name"],
-        },
-      ],
-    });
-
-    const auction = auctionData.get({ plain: true });
+    const auctionData = await Product.findByPk(req.params.id)
+    const product = await auctionData.get({ plain: true });
+    console.log(product)
 
     res.render("auction", {
-      ...auction,
-      logged_in: req.session.logged_in,
-    });
+     product,
+     logged_in: req.session.logged_in,
+    }
+    );
   } catch (err) {
     res.status(500).json(err);
   }
