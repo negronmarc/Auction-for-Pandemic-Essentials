@@ -22,4 +22,5 @@ async function bidAmount (event) {
     });
     const updatedBid = response.json()
     console.log(updatedBid);
+    window.location.reload();
 };
