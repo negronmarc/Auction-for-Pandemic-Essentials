@@ -15,18 +15,8 @@
     <h1>Hypochondriacs</h1>
     <h2>Essential Pandemic supplies</h2>
   </header>
-  <nav>
-    <a href="views/products.handlebars">Products</a>
-
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-
-    <button id="login" class="btn-no-style">Login</button>
-    {{/if}}
-  </nav>
   <main>
-    <div class="products">
+    <div class="products row justify-space-evenly">
       {{{body}}}
     </div>
   </main>

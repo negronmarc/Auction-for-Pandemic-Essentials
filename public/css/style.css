@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  background-color: #5EA181;
+  /* background-color: #5ea181; */
 }
 a {
   color: black;
@@ -18,18 +18,21 @@ a:visited {
 header {
   padding: 30px;
   text-align: center;
-  background: #5EA181;
+  background-image: linear-gradient(darkred, white);
+  /* background: #5EA181; */
   color: black;
 }
 main {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  background-color: darkred;
+  /* background-image: linear-gradient(white, darkred); */
 }
 
 aside {
   flex: 0;
-  background-color: #A15E7E;
+  background-color: #a15e7e;
   padding: 80px;
   text-align: left;
   color: black;
@@ -37,7 +40,7 @@ aside {
 
 nav {
   display: flex;
-  background-color: #A15E7E;
+  background-color: #a15e7e;
 }
 
 nav a {
@@ -62,7 +65,7 @@ nav a:hover {
   align-items: center;
 }
 
-.btn-no-style {
+/* .btn-no-style {
   background: none;
   border: none;
   padding: 0;
@@ -71,12 +74,31 @@ nav a:hover {
   font-size: 100%;
   transition: color 0.1s;
   margin-left: 16px;
-}
+} */
 img {
+  justify-content: center;
   max-width: 100%;
   height: auto;
+  border-bottom: double;
+  border-color: black;
+}
+.single{
+  background-color: white;
+  max-width: 75%;
+  height: auto;
+  border-style: double;
+  border-color: black;
+
 }
 .product {
+<<<<<<< HEAD
+=======
+  width: 100%;
+  background-image: linear-gradient(white, darkred);
+  /* background-color: white; */
+  /* box-shadow: 0 4px 8px 0 rgba(42, 117, 86, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+>>>>>>> b5f5a58fef8d4e425320fc8ded78a7ec69faea71
   margin-bottom: 25px;
 }
 .product-details {
@@ -98,28 +120,42 @@ img {
   margin: 0 0 20px 0;
   flex: 0 0 50%;
   max-width: 45%;
-  padding: 5px;
+  padding: 20px;
   border: 3px solid black;
-  /* border-radius: ; */
+  border-radius: 15px;
   border-style: double;
   border-width: thick;
-  background-color: #dfb2c8;
+  background-color: white;
   color: black;
 }
-
+.products {
+  background-image: linear-gradient(white, darkred);
+  /* background-color: white; */
+  justify-content: space-evenly;
+  justify-content: center;
+  /* margin-top: 40px; */
+}
 .card header {
   color: black;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
+<<<<<<< HEAD
+=======
+  background-color: #a15e7e;
+>>>>>>> b5f5a58fef8d4e425320fc8ded78a7ec69faea71
   padding: 0.625rem;
   /* border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0; */
 }
 
 #card-body {
+  justify-content: center;
   font-size: 1.4rem;
   text-align: left;
   font-weight: bold;
+  background-color: white;
+  border-style: double;
+  border-color: black;
 }
 
 #product-list {
@@ -134,8 +170,9 @@ img {
 }
 
 #products-images {
-  width: 60%;
-  height: 80%;
+  width: 90%;
+  /* height: 80%; */
+  justify-content: center;
   text-align: center;
 }
 
@@ -145,15 +182,27 @@ img {
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: center;
+  padding: 20px
 }
-h2 {
+p {
   text-align: center;
 }
-form.form-input {
-  background-color: #86707b;
+form .form-input {
+  background-color:rgb(233, 232, 232);
+  border: black;
+  border-style:solid;
 }
-.products {
-  background-color: #A15E7E;
-  justify-content: space-evenly;
-  justify-content: center;
+.btn.btn-primary {
+  background-color: rgb(168, 168, 168);
+  border: black;
+  border-style:solid;
+  padding: 5;
+  cursor: pointer;
+  text-decoration: bold;
+  font-size: 75%;
+  transition: color 0.1s;
+  /* margin-left: 16px; */
+  color: black;
+  font-size:medium;
+  
 }
