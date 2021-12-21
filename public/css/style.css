@@ -91,11 +91,14 @@ img {
 
 }
 .product {
+<<<<<<< HEAD
+=======
   width: 100%;
   background-image: linear-gradient(white, darkred);
   /* background-color: white; */
   /* box-shadow: 0 4px 8px 0 rgba(42, 117, 86, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+>>>>>>> b5f5a58fef8d4e425320fc8ded78a7ec69faea71
   margin-bottom: 25px;
 }
 .product-details {
@@ -137,7 +140,10 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
+<<<<<<< HEAD
+=======
   background-color: #a15e7e;
+>>>>>>> b5f5a58fef8d4e425320fc8ded78a7ec69faea71
   padding: 0.625rem;
   /* border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0; */
 }
