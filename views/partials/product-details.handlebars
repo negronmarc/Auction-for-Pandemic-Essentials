@@ -1,4 +1,3 @@
-{{!-- TODO: removed 'product.' prefix from the data fields --}}
 <section class="product">
 
   <div id="card-body">
@@ -7,8 +6,8 @@
     <p id="product-info">Starting Price: ${{starting_price}}</p>
     <p id="product-info">Current Bid: ${{current_bid}}</p>
     <p id="product-info">Bid Count: {{bid_count}}</p>
+    <a href="http://localhost:3001/auction/{{id}}"><p>Click here to go to the auction!</p></a>
     {{!-- <p id="product-info">Category Name: {{}}</p> --}}
-    {{!-- <p id="product-info">Current Bidder ID: {{current_bidder_id}}</p> --}}
     {{!-- <p>Auction open until: {{ format_date auction_date }}</p> --}}
   </div>
 </section>
