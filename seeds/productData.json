@@ -48,5 +48,157 @@
     "bid_count": 0,
     "category_id": 2,
     "current_bidder_id": 3
+  },
+  {
+    "name": "Forehead Thermometer",
+    "starting_price": 20,
+    "current_bid": 0,
+    "description": "Temp reader to tell you your temperature",
+    "image": "thermo.jpg",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": "Humidifier",
+    "starting_price": 40,
+    "current_bid": 0,
+    "description": "to help ease your symptoms",
+    "image": "humidifier.jpg",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": "Softsoap Liquid Hand Soap",
+    "starting_price": 6,
+    "current_bid": 0,
+    "description": "to clean your filthy hands!!",
+    "image": "soap.jpg",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": " Pampers Diapers Pack (204) ",
+    "starting_price":42,
+    "current_bid": 0,
+    "description": "",
+    "image": "pampers.jpeg",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": "Kleenex anti-viral tissues",
+    "starting_price": 6,
+    "current_bid": 0,
+    "description": "",
+    "image": "antiViraltissue.png",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": "L'Oreal Paris Excellence Creme Permanent Hair Color",
+    "starting_price": 9,
+    "current_bid": 0,
+    "description": "",
+    "image": "loreal.jpg",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": "Electric heat pad",
+    "starting_price": 25,
+    "current_bid": 0,
+    "description": "protective face covering from viruses",
+    "image": "heatpad.jpg",
+    "bid_count": 0,
+    "category_id": 1,
+    "current_bidder_id": 1
+  },
+  {
+    "name": "BinaxNOW COVID-19 Antigen Rapid Self-Test at Home Kit ",
+    "starting_price": 24,
+    "current_bid": 0,
+    "description": "COVID-19 Antigen Rapid Self-Test at Home Kit ",
+    "image": "binaxnow.jpg",
+    "bid_count": 0,
+    "category_id": 1,
+    "current_bidder_id": 1
+  },
+  {
+    "name": "Advil Cold and Sinus",
+    "starting_price": 8,
+    "current_bid": 0,
+    "description": "combines the relief of a strong decongestant to open your airways with the power of Advil  to relieve the pain commonly associated with sinus pressure.",
+    "image": "advil.png",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 2
+  },
+  {
+    "name": "HEPA Air Purifiers for Home",
+    "starting_price": 52,
+    "current_bid": 0,
+    "description": "",
+    "image": "purifier.jpg",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": "The complete manual of things that might kill you",
+    "starting_price": 20,
+    "current_bid": 0,
+    "description": "book.jpg",
+    "image": "",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": "Dyson V7 Absolute Vacuum",
+    "starting_price": 300,
+    "current_bid": 0,
+    "description": "",
+    "image": "dyson.jpg",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": "MY MEDIC medical kit",
+    "starting_price": 1200,
+    "current_bid": 0,
+    "description": "",
+    "image": "medkit.png",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": "Brita Grand water pitcher",
+    "starting_price": 30,
+    "current_bid": 0,
+    "description": "",
+    "image": "brita.jpg",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
+  },
+  {
+    "name": "Theraflu ExpressMax Daytime and Nighttime Severe Cold and Cough Syrup Berry Flavor Combo Pack, 2 x 8.3 oz bottle ",
+    "starting_price": 16,
+    "current_bid": 0,
+    "description": "Syrup Berry Flavor Combo Pack, 2 x 8.3 oz bottle ",
+    "image": "theraflu.jpg",
+    "bid_count": 0,
+    "category_id": 2,
+    "current_bidder_id": 3
   }
+
+
 ]

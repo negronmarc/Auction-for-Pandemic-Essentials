@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: grey;
+  color: #5EA181;
 }
 header {
   padding: 30px;
@@ -52,7 +52,7 @@ nav a {
 
 nav a:hover {
   color: white;
-  background-color: gray;
+  background-color: #A15E7E;
 }
 
 .auction {
