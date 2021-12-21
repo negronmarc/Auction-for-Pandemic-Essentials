@@ -10,7 +10,7 @@ body {
 }
 a {
   color: black;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:visited {
   color: #5EA181;
@@ -77,10 +77,7 @@ img {
   height: auto;
 }
 .product {
-  width: 50%;
-  background-color: #A15E7E;
-  box-shadow: 0 4px 8px 0 #5EA181(42, 117, 86, 0.2),
-    0 6px 20px 0 #5EA181(0, 0, 0, 0.19);
+
   margin-bottom: 25px;
 }
 .product-details {
@@ -101,13 +98,13 @@ img {
 .login-card {
   margin: 0 0 20px 0;
   flex: 0 0 50%;
-  max-width: 50%;
+  max-width: 45%;
   padding: 5px;
   border: 3px solid black;
   /* border-radius: ; */
   border-style: double;
   border-width: thick;
-  background-color: gray;
+  background-color: #dfb2c8;
   color: black;
 }
 
@@ -116,18 +113,18 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  background-color: #5EA181;
+
   padding: 0.625rem;
   /* border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0; */
 }
 
-.card-body {
+#card-body {
   font-size: 1.4rem;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
 }
 
-.auction-name {
+#product-list {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 2px 2px 5px grey;
@@ -138,10 +135,27 @@ img {
   padding-left: 100px;
 }
 
+#products-images {
+  width: 60%;
+  height: 80%;
+  text-align: center;
+}
+
 /* LAYOUT */
 .container {
   display: flex;
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: center;
+}
+h2 {
+  text-align: center;
+}
+form.form-input {
+  background-color: #86707b;
+}
+.products {
+  background-color: #A15E7E;
+  justify-content: space-evenly;
+  justify-content: center;
 }

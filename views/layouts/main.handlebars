@@ -13,10 +13,10 @@
 <body>
   <header>
     <h1>Hypochondriacs</h1>
-    <h2> Essential Pandemic supplies</h2>
+    <h2>Essential Pandemic supplies</h2>
   </header>
   <nav>
-    <a href="/">Home</a>
+    <a href="views/products.handlebars">Products</a>
 
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
@@ -26,9 +26,6 @@
     {{/if}}
   </nav>
   <main>
-    <aside>
-      <h2>Get ready to place your bids!</h2>
-    </aside>
     <div class="products">
       {{{body}}}
     </div>
