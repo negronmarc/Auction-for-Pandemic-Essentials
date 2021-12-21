@@ -1,3 +1,3 @@
-DROP DATABASE auction;
+DROP DATABASE IF EXISTS auction;
 CREATE DATABASE auction;
 USE auction;
