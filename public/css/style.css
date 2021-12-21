@@ -121,14 +121,13 @@ img {
   /* border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0; */
 }
 
-.card-body {
-  justify-content: center;
+#card-body {
   font-size: 1.4rem;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
 }
 
-.auction-name {
+#product-list {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 2px 2px 5px grey;
@@ -137,6 +136,12 @@ img {
   padding-bottom: 30px;
   padding-right: 100px;
   padding-left: 100px;
+}
+
+#products-images {
+  width: 60%;
+  height: 80%;
+  text-align: center;
 }
 
 /* LAYOUT */
