@@ -7,11 +7,10 @@ router.get("/", (req, res) => {
   if (req.session.logged_in) {
     console.log("Redirecting to /products");
     res.redirect("/products");
-  }
-  else {
+  } else {
     console.log("Redirecting to /login");
     res.redirect("/login");
-  };
+  }
 });
 
 // router GET /login render the login page
@@ -22,7 +21,7 @@ router.get("/login", (req, res) => {
     console.log("Redirecting to /products");
     res.redirect("/products");
     return;
-  };
+  }
 
   res.render("login");
 });
@@ -31,34 +30,53 @@ router.get("/login", (req, res) => {
 router.get("/products", async (req, res) => {
   console.log("GET /products");
   if (!req.session.logged_in) {
-    console.log('redirecting /login');
+    console.log("redirecting /login");
     res.redirect("/login");
     return;
-  };
-  
+  }
+
   const dbProductData = await Product.findAll();
 
   // TODO: .map() used to loop thru results (array) from database
-  const products = dbProductData.map((product) =>
-    product.get({ plain: true })
-  );
-  console.log('products: ', products);
+  const products = dbProductData.map((product) => product.get({ plain: true }));
+  console.log("products: ", products);
   res.render("products", { products });
 });
 
 //router GET /auction render a page with a single product
 router.get("/auction/:id", async (req, res) => {
   try {
-    const auctionData = await Product.findByPk(req.params.id)
+    const auctionData = await Product.findByPk(req.params.id);
     const product = await auctionData.get({ plain: true });
-    console.log(product)
+    console.log(product);
+
+    res.render("auction", {
+      product,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.put("/auction/:id", async (req, res) => {
+  try {
+    const auctionData = await Product.update(req.body, {
+        where: {
+          id: req.params.id,
+        },
+      }
+    );
+    const product = await auctionData.json();
 
     res.render("auction", {
       product,
       logged_in: req.session.logged_in,
     }
     );
+    // res.status(200);
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
