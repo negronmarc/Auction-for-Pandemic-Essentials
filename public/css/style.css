@@ -6,19 +6,19 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  background-color: darkolivegreen;
+  background-color: #5EA181;
 }
 a {
   color: black;
   text-decoration: underline;
 }
 a:visited {
-  color: grey;
+  color: #5EA181;
 }
 header {
   padding: 30px;
   text-align: center;
-  background: darkseagreen;
+  background: #5EA181;
   color: black;
 }
 main {
@@ -29,7 +29,7 @@ main {
 
 aside {
   flex: 0;
-  background-color: gray;
+  background-color: #A15E7E;
   padding: 80px;
   text-align: left;
   color: black;
@@ -37,7 +37,7 @@ aside {
 
 nav {
   display: flex;
-  background-color: gray;
+  background-color: #A15E7E;
 }
 
 nav a {
@@ -49,7 +49,7 @@ nav a {
 
 nav a:hover {
   color: white;
-  background-color: gray;
+  background-color: #A15E7E;
 }
 
 .auction {
@@ -78,9 +78,9 @@ img {
 }
 .product {
   width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(42, 117, 86, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #A15E7E;
+  box-shadow: 0 4px 8px 0 #5EA181(42, 117, 86, 0.2),
+    0 6px 20px 0 #5EA181(0, 0, 0, 0.19);
   margin-bottom: 25px;
 }
 .product-details {
@@ -116,7 +116,7 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  background-color: gray;
+  background-color: #5EA181;
   padding: 0.625rem;
   /* border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0; */
 }
