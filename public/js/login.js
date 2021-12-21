@@ -5,16 +5,18 @@ const loginFormHandler = async (event) => {
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
 
-  
+
 
   if (username && email && password) {
-    const response = await fetch('/api/users/login', {
+    // TODO: /api/users modified to /api/user to match backend
+    const response = await fetch('/api/user/login', {
       method: 'POST',
       body: JSON.stringify({ username, email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
 
     if (response.ok) {
+      // TODO: the root route / was not defined in backend
       document.location.replace('/');
     } else {
       alert('Failed to log in.');

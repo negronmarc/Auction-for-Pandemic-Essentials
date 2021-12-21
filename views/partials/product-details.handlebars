@@ -1,12 +1,13 @@
 
 {{!-- {{#if loggedIn}} --}}
-
+{{!-- TODO: removed 'product.' prefix from the data fields --}}
 <section class="product">
-  <img src="../../public/images/{{product.image}}.jpg" alt="">
-  <div class="product-details">
-    <h3>{{product.name}}</h3>
-    <h3>{{product.starting_price}}</h3>
-    <h3>{{product.current_bid}}</h3>
+
+  <div class="card-body">
+    <img src="/images/{{image}}" alt="{{description}}">
+    <h3>{{name}}</h3>
+    <h3>{{starting_price}}</h3>
+    <h3>{{current_bid}}</h3>
     <h3>{{bid_count}}</h3>
     <h3>{{category_id}}</h3>
     <h3>{{current_bidder_id}}</h3>

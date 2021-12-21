@@ -33,13 +33,14 @@ Product.init(
     bid_count: {
       type: DataTypes.INTEGER,
     },
-    category_id: {
-      type: DataTypes.INTEGER,
-     allowNull: false,
-    },
-    current_bidder_id: {
-      type: DataTypes.INTEGER,
-    },
+    // TODO: allow sequelize to generate foreign keys automatically
+    // category_id: {
+    //   type: DataTypes.INTEGER,
+    //  allowNull: false,
+    // },
+    // current_bidder_id: {
+    //   type: DataTypes.INTEGER,
+    // },
   },
   {
     sequelize,
