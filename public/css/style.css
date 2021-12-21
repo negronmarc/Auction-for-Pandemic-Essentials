@@ -77,10 +77,6 @@ img {
   height: auto;
 }
 .product {
-  width: 100%;
-  background-color: #5EA181;
-  box-shadow: 0 4px 8px 0 rgba(42, 117, 86, 0.2),
-  0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
 }
 .product-details {
@@ -116,7 +112,6 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  background-color: #A15E7E;
   padding: 0.625rem;
   /* border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0; */
 }
