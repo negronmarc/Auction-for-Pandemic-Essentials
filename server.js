@@ -15,15 +15,14 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create();
 //const hbs = exphbs.create({ helpers });
 
-
 const sess = {
   secret: "Super secret secret",
   cookie: {},
   resave: false,
   saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize,
-  }),
+  // store: new SequelizeStore({
+  //   db: sequelize,
+  // }),
 };
 
 app.use(session(sess));
@@ -35,7 +34,6 @@ app.set("view engine", "handlebars");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 
 app.use(routes);
 

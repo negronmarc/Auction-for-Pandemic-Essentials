@@ -1,16 +1,15 @@
-
 {{!-- {{#if loggedIn}} --}}
 
 <section class="product">
-  {{!-- <img src="/images/{{filename}}" alt="{{description}}"> --}}
-  <div class="product-details">
-    <img src="/images/black-masks.jpg" alt="" width="200" height="200"</image>
-    <h3>Product Name: {{product.name}}</h3>
-    <h3>Description: {{product.description}}</h3>
-    <h3>Starting Price: {{product.starting_price}}</h3>
-    <h3>Current Bid: {{product.current_bid}}</h3>
-    <h3>Bid Count: {{product.bid_count}}</h3>
-    <h3>Category: {{project.category_id}}</h3>
+
+  <div class="card-body">
+    <img src="/images/{{product.image}}" alt="{{description}}">
+    <h3>{{product.name}}</h3>
+    <h3>{{product.starting_price}}</h3>
+    <h3>{{product.current_bid}}</h3>
+    <h3>{{product.bid_count}}</h3>
+    <h3>{{product.category_id}}</h3>
+    <h3>{{product.current_bidder_id}}</h3>
     {{!-- <p>Auction open until: {{ format_date auction_date }}</p> --}}
   </div>
 </section>
