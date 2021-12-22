@@ -1,5 +1,3 @@
-{{!-- {{#if loggedIn}} --}}
-
 <section class="product flex-row justify-center">
 
   <div class="card-body single product-id" id="{{product.id}}">
@@ -12,6 +10,13 @@
     <h3>Current Bidder Id: {{product.current_bidder_id}}</h3>
     {{!-- <p>Auction open until: {{ format_date auction_date }}</p> --}}
       <button id="submit">Increase Bid By A Dollar</button>
+    <img id="auction-image" src="/images/{{product.image}}" alt="{{description}}" />
+    <p class="product-name">{{product.name}}</p>
+    <p>Market Price: ${{product.starting_price}}</p>
+    <p class="current-bid" data-current-bid="{{product.current_bid}}">Current Bid: ${{product.current_bid}}</p>
+    <p class="bid-count" data-bid-count="{{product.bid_count}}">Bid Count: {{product.bid_count}}</p>
+    <p>Auction open until: <span class="auction-date" data-auction-date="2022-01-01T22:14:14.590Z"></span></p>
+    <button id="submit">Increase Bid By 4 Dollars</button>
     </div>
   </div>
 </section>

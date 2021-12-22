@@ -6,7 +6,7 @@ Product.belongsTo(Category,{
   foreignKey: "category_id"
 })
 
-// TODO:
+
 Product.belongsTo(User, {
   foreignKey: "current_bidder_id"
 })

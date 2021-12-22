@@ -6,53 +6,21 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  /* background-color: #5ea181; */
+  background-image: linear-gradient(to left, darkred, white, darkred);
+  background-repeat: no-repeat;
 }
+
+header {
+  text-align: center;
+}
+
 a {
   color: black;
   text-decoration: none;
 }
+
 a:visited {
-  color: #5EA181;
-}
-header {
-  padding: 30px;
-  text-align: center;
-  background-image: linear-gradient(darkred, white);
-  /* background: #5EA181; */
-  color: black;
-}
-main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  background-color: darkred;
-  /* background-image: linear-gradient(white, darkred); */
-}
-
-aside {
-  flex: 0;
-  background-color: #a15e7e;
-  padding: 80px;
-  text-align: left;
-  color: black;
-}
-
-nav {
-  display: flex;
-  background-color: #a15e7e;
-}
-
-nav a {
-  color: black;
-  padding: 15px 20px;
-  text-decoration: underline;
-  text-align: center;
-}
-
-nav a:hover {
-  color: white;
-  background-color: #A15E7E;
+  color: #008B8B;
 }
 
 .auction {
@@ -67,33 +35,30 @@ nav a:hover {
 
 img {
   justify-content: center;
-  max-width: 100%;
+  width: 50%;
   height: auto;
   border-bottom: double;
   border-color: black;
 }
-.single{
+
+.single {
   background-color: white;
   max-width: 55%;
   height: auto;
   border-style: double;
   border-color: black;
-
 }
+
 .product {
   width: 100%;
-  background-image: linear-gradient(white, darkred);
-  /* background-color: white; */
-  /* box-shadow: 0 4px 8px 0 rgba(42, 117, 86, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   margin-bottom: 25px;
 }
+
 .product-details {
   text-align: center;
   padding: 10px 20px;
-  font-weight: bold;
 }
-/* CARDS */
+
 .card {
   margin: 20px;
   flex: 0 1 300px;
@@ -115,28 +80,23 @@ img {
   background-color: white;
   color: black;
 }
+
 .products {
-  background-image: linear-gradient(white, darkred);
-  /* background-color: white; */
   justify-content: space-evenly;
   justify-content: center;
-  /* margin-top: 40px; */
 }
+
 .card header {
   color: black;
-  font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  background-color: #a15e7e;
   padding: 0.625rem;
-  /* border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0; */
 }
 
 #card-body {
   justify-content: center;
   font-size: 1.4rem;
   text-align: left;
-  font-weight: bold;
   background-color: white;
   border-style: double;
   border-color: black;
@@ -163,33 +123,52 @@ img {
   padding-left: 40px;
 }
 
-/* LAYOUT */
 .container {
   display: flex;
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: center;
-  padding: 20px
+  padding: 20px;
 }
+
 p {
   text-align: center;
 }
+
 form .form-input {
-  background-color:rgb(233, 232, 232);
+  background-color: rgb(233, 232, 232);
   border: black;
-  border-style:solid;
+  border-style: solid;
 }
+
 .btn.btn-primary {
   background-color: rgb(168, 168, 168);
   border: black;
-  border-style:solid;
+  border-style: solid;
   padding: 5;
   cursor: pointer;
   text-decoration: bold;
   font-size: 75%;
   transition: color 0.1s;
-  /* margin-left: 16px; */
   color: black;
-  font-size:medium;
-  
+  font-size: medium;
+}
+
+#auction-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.product-name {
+  font-weight: bold;
+  padding-top: 10px;
 }
