@@ -1,9 +1,7 @@
 # Hypochondriacs
 
-  ## Description
-  Auction application that allows users to join and become a member which will allow them to place bids on popular pandemic products.    
-  
   ## Table of Contents
+  - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Technologies](#technologies)
@@ -13,31 +11,51 @@
   - [License](#license)
   - [Badges](#badges)
 
+  ## Description
+  Hypochondriacs is an auction application that allows users to place bids on popular pandemic products. Users will first have to sign in. The users will then be able to login after the initial visit. Once they are logged in they can view products that are available to bid on. If a user clicks on a product it will then take them to the product page where they can place their bids. Each time someone clicks on the bid button it records the amount of bids.
+
   ## Installation
   Install Visual Studio Code and Node.js to make use of this application.
+
   ## Usage
   Gives members the opportunity to place bids on essential items for the pandemic. 
+
   ## Technologies
   - JavaScript
   - Node.js
   - SQL
+  - Sequelize
   - Express.js
   - Inquirer.js
-  - Node Mailer
-  - Validator
-  - Lodash
-  - Passport.js
-  - Mongoose
+  - Handlebars
+
   ## Preview
-  ![Img](https://via.placeholder.com/150)
+  ![Img](hypo-login.png)
+
+  ![Img](hypo-single.png)
+
   ## Contributors
-  Joe Maneira, Katie Gendaszek, Sulaimon Fedai, Marc Negron
+  Joe Maneira:
+  https://github.com/Maneira3232
+
+  Katie Gendaszek:
+  https://github.com/kgendaszek
+  
+  Marc Negron:
+  https://github.com/negronmarc
+
+  Sulaimon Fedai:
+  https://github.com/sfedai
+
   ## Launch
   https://github.com/negronmarc/Hypochondriacs
+
+  https://auction-pandemic-essentials.herokuapp.com/
+
   ## License
   MIT License
 
-    Copyright (c) [year] [fullname]
+    Copyright (c) [2021] [Hypochondriacs]
     
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
