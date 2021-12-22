@@ -1,6 +1,15 @@
 <section class="product flex-row justify-center">
 
   <div class="card-body single product-id" id="{{product.id}}">
+    <img src="/images/{{product.image}}" alt="{{description}}" />
+    <h3>{{product.name}}</h3>
+    <h3>Starting Price: {{product.starting_price}}</h3>
+    <h3 class="current-bid" data-current-bid="{{product.current_bid}}">Current Bid: {{product.current_bid}}</h3>
+    <h3 class="bid-count" data-bid-count="{{product.bid_count}}">Bid Count:{{product.bid_count}}</h3>
+    <h3>Category: {{product.category_id}}</h3>
+    <h3>Current Bidder Id: {{product.current_bidder_id}}</h3>
+    {{!-- <p>Auction open until: {{ format_date auction_date }}</p> --}}
+      <button id="submit">Increase Bid By A Dollar</button>
     <img id="auction-image" src="/images/{{product.image}}" alt="{{description}}" />
     <p class="product-name">{{product.name}}</p>
     <p>Market Price: ${{product.starting_price}}</p>
