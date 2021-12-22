@@ -43,7 +43,7 @@ img {
 
 .single {
   background-color: white;
-  max-width: 75%;
+  max-width: 55%;
   height: auto;
   border-style: double;
   border-color: black;
@@ -100,8 +100,10 @@ img {
   background-color: white;
   border-style: double;
   border-color: black;
-}
+  
 
+}
+/* 
 #product-list {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -111,13 +113,14 @@ img {
   padding-bottom: 30px;
   padding-right: 100px;
   padding-left: 100px;
-}
+} */
 
 #products-images {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  width: 70%;
+  /* height: 80%; */
+  justify-content: center;
+  text-align: center;
+  padding-left: 40px;
 }
 
 .container {
