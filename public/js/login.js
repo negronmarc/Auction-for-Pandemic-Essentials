@@ -8,7 +8,6 @@ const loginFormHandler = async (event) => {
 
 
   if (username && email && password) {
-    // TODO: /api/users modified to /api/user to match backend
     const response = await fetch('/api/user/login', {
       method: 'POST',
       body: JSON.stringify({ username, email, password }),
@@ -16,7 +15,6 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // TODO: the root route / was not defined in backend
       document.location.replace('/');
     } else {
       alert('Failed to log in.');

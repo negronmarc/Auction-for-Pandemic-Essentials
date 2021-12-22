@@ -15,16 +15,16 @@ Product.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     starting_price: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
     current_bid: {
       type: DataTypes.INTEGER,
-    },
-    description: {
-      type: DataTypes.STRING,
-      allowNull: false,
     },
     image: {
       type: DataTypes.STRING,
@@ -33,14 +33,6 @@ Product.init(
     bid_count: {
       type: DataTypes.INTEGER,
     },
-    // TODO: allow sequelize to generate foreign keys automatically
-    // category_id: {
-    //   type: DataTypes.INTEGER,
-    //  allowNull: false,
-    // },
-    // current_bidder_id: {
-    //   type: DataTypes.INTEGER,
-    // },
   },
   {
     sequelize,
