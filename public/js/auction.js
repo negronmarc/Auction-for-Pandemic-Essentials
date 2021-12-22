@@ -8,6 +8,30 @@ console.log(typeof bidCount);
 
 sumBtn.addEventListener("click", bidAmount);
 
+const auctionDate = document.querySelector('.auction-date').getAttribute("data-auction-date")
+
+function msToTime(milliseconds) {
+    var day, hour, minute, seconds;
+    seconds = Math.floor(milliseconds / 1000);
+    minute = Math.floor(seconds / 60);
+    seconds = seconds % 60;
+    hour = Math.floor(minute / 60);
+    minute = minute % 60;
+    day = Math.floor(hour / 24);
+    hour = hour % 24;
+    return {
+        day: day,
+        hour: hour,
+        minute: minute,
+        seconds: seconds
+    };
+}
+setInterval(function(){
+    const timeLeft= Math.abs(new Date(auctionDate)-Date.now())
+    const duration=msToTime(timeLeft)
+    document.querySelector('.auction-date').innerText=`${duration.day}:${duration.hour}:${duration.minute}:${duration.seconds}`
+})
+
 async function bidAmount (event) {
     event.preventDefault();
     const response = await fetch(`/auction/${productId}`, {
