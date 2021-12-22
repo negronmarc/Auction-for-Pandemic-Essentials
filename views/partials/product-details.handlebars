@@ -1,13 +1,12 @@
 <section class="product">
 
   <div id="card-body">
-    <img id="products-images" src="/images/{{image}}" alt="{{description}}">
-    <p id="product-info">Product Name: {{name}}</p>
-    <p id="product-info">Starting Price: ${{starting_price}}</p>
+    <img id="products-images" src="/images/{{image}}" alt="">
+    <p id="product-info" class="product-name">Product Name: {{name}}</p>
+    <p id="product-info">Description: {{description}}</p>
+    <p id="product-info">Market Price: ${{starting_price}}</p>
     <p id="product-info">Current Bid: ${{current_bid}}</p>
-    <p id="product-info">Bid Count: {{bid_count}}</p>
-    <a href="http://localhost:3001/auction/{{id}}"><p>Click here to go to the auction!</p></a>
-    {{!-- <p id="product-info">Category Name: {{}}</p> --}}
-    {{!-- <p>Auction open until: {{ format_date auction_date }}</p> --}}
+    
+    <a href="http://localhost:3001/auction/{{id}}"><p>Click text to go to the auction!</p></a>
   </div>
 </section>

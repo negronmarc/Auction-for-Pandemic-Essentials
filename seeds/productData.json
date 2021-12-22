@@ -3,202 +3,180 @@
     "name": "Black Disposable Face Masks",
     "starting_price": 12.99,
     "current_bid": 0,
-    "description": "protective face covering from viruses",
+    "description": "A protective mask covering the nose and mouth.",
     "image": "masks.jpg",
     "bid_count": 0,
-    "category_id": 1,
-    "current_bidder_id": 1
+    "category_id": 1
   },
   {
-    "name": "Germ-X Original Hand Sanitizer, with Pump, 8Fl Oz (12 Pack)",
+    "name": "Germ-X Original Hand Sanitizer, 8Fl Oz (12 Pack)",
     "starting_price": 30.99,
     "current_bid": 0,
-    "description": "The Best in Hand Sanitizer on the market the name says it all people",
+    "description": "Applied to the hands for the purpose of removing common pathogens (disease-causing organisms). Hand sanitizers typically come in foam, gel, or liquid form. ",
     "image": "germx.jpg",
     "bid_count": 0,
-    "category_id": 1,
-    "current_bidder_id": 1
+    "category_id": 1
   },
   {
     "name": "Cottonelle Ultra 24 Family Mega Rolls",
     "starting_price": 25.18,
     "current_bid": 0,
-    "description": "toilet paper with active Cleaning Ripples, 24 Family Mega Rolls, Strong bath tissue ",
+    "description": "Paper sheets on a roll.",
     "image": "cottonelle.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 2
+    "category_id": 2
   },
   {
     "name": "Purell Hand Sanitizing Wipes",
     "starting_price": 16.99,
     "current_bid": 0,
-    "description": "Clean refreshing scent from(Pack of 6)",
+    "description": "Small, pre-moistened towels or towelettes that are used to clean hands.",
     "image": "purellwipes.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
-    "name": "Clorox HE Performance Bleach",
+    "name": "Clorox Disinfecting Wipes",
     "starting_price": 15.5,
     "current_bid": 0,
-    "description": "its BLEACH must i really explain?",
+    "description": "Small, pre-moistened towels or towelettes that are used to clean surfaces for the removal of dirt and bacteria, such as staph and salmonella that may have been placed on the affected surface from foods, persons or animals.",
     "image": "clorox.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
     "name": "Forehead Thermometer",
     "starting_price": 20,
     "current_bid": 0,
-    "description": "Temp reader to tell you your temperature",
+    "description": "A thermometer that is placed on, passed over, or pointed at the forehead to measure a person's body temperature",
     "image": "thermo.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
     "name": "Humidifier",
     "starting_price": 40,
     "current_bid": 0,
-    "description": "to help ease your symptoms",
+    "description": "A device for keeping the atmosphere moist in a room.",
     "image": "humidifier.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
     "name": "Softsoap Liquid Hand Soap",
     "starting_price": 6,
     "current_bid": 0,
-    "description": "to clean your filthy hands!!",
+    "description": "Soap in liquid form so you can clean your filthy hands!!",
     "image": "soap.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
     "name": " Pampers Diapers Pack (204) ",
-    "starting_price":42,
+    "starting_price": 42,
     "current_bid": 0,
-    "description": "",
+    "description": "Piece of absorbent material wrapped around a baby's bottom.",
     "image": "pampers.jpeg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
     "name": "Kleenex anti-viral tissues",
     "starting_price": 6,
     "current_bid": 0,
-    "description": "",
-    "image": "antiViraltissue.png",
+    "description": "A disposable piece of absorbent paper, used especially as a handkerchief or for cleaning the skin.",
+    "image": "antiviraltissue.png",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
     "name": "L'Oreal Paris Excellence Creme Permanent Hair Color",
     "starting_price": 9,
     "current_bid": 0,
-    "description": "",
+    "description": "A soluble substance for coloring hair. For all those pesky greys you have accumulated from the pandemic.",
     "image": "loreal.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
     "name": "Electric heat pad",
     "starting_price": 25,
     "current_bid": 0,
-    "description": "protective face covering from viruses",
+    "description": "Electric mat that heats up and is held against the body to reduce pain. Great for any soreness that occurs while infected with COVID.",
     "image": "heatpad.jpg",
     "bid_count": 0,
-    "category_id": 1,
-    "current_bidder_id": 1
+    "category_id": 1
   },
   {
-    "name": "BinaxNOW COVID-19 Antigen Rapid Self-Test at Home Kit ",
+    "name": "BinaxNOW COVID-19 Antigen Rapid Self-Test at Home Kit",
     "starting_price": 24,
     "current_bid": 0,
-    "description": "COVID-19 Antigen Rapid Self-Test at Home Kit ",
+    "description": "Great product for those who are worried they might be infected but do not want to risk leaving their home.",
     "image": "binaxnow.jpg",
     "bid_count": 0,
-    "category_id": 1,
-    "current_bidder_id": 1
+    "category_id": 1
   },
   {
     "name": "Advil Cold and Sinus",
     "starting_price": 8,
     "current_bid": 0,
-    "description": "combines the relief of a strong decongestant to open your airways with the power of Advil  to relieve the pain commonly associated with sinus pressure.",
+    "description": "Combines the relief of a strong decongestant to open your airways with the power of Advil to relieve the pain commonly associated with sinus pressure.",
     "image": "advil.png",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 2
+    "category_id": 2
   },
   {
     "name": "HEPA Air Purifiers for Home",
     "starting_price": 52,
     "current_bid": 0,
-    "description": "",
+    "description": "Device that removes contaminating particles (such as dust, pollen, dander, and COVID if your feeling lucky) from the air.",
     "image": "purifier.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
-    "name": "The complete manual of things that might kill you",
+    "name": "The Complete Manual of Things That Might Kill You",
     "starting_price": 20,
     "current_bid": 0,
-    "description": "book.jpg",
-    "image": "",
+    "description": "The perfect book to prevent a person from ever sleeping again.",
+    "image": "manual.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
     "name": "Dyson V7 Absolute Vacuum",
     "starting_price": 300,
     "current_bid": 0,
-    "description": "",
+    "description": "An electrical apparatus that by means of suction collects dust and small particles from floors and other surfaces. Ideal for those elitists who want a vacuum that can survive the end of the world.",
     "image": "dyson.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
     "name": "MY MEDIC medical kit",
     "starting_price": 1200,
     "current_bid": 0,
-    "description": "",
+    "description": "A small bag or case containing medical supplies.",
     "image": "medkit.png",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
-    "name": "Brita Grand water pitcher",
+    "name": "Brita Grand Water Pitcher",
     "starting_price": 30,
     "current_bid": 0,
-    "description": "",
+    "description": "Stores water and removes unwanted substances such as bacteria or harmful chemicals. Please use only water for this product and do not try to fill it with any bodily fluids.",
     "image": "brita.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   },
   {
     "name": "Theraflu ExpressMax Daytime and Nighttime Severe Cold and Cough Syrup Berry Flavor Combo Pack, 2 x 8.3 oz bottle ",
     "starting_price": 16,
     "current_bid": 0,
-    "description": "Syrup Berry Flavor Combo Pack, 2 x 8.3 oz bottle ",
+    "description": "Used to relieve symptoms of a cold or for those who would rather treat COVID with a home remedy.",
     "image": "theraflu.jpg",
     "bid_count": 0,
-    "category_id": 2,
-    "current_bidder_id": 3
+    "category_id": 2
   }
-
-
 ]

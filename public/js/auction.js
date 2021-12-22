@@ -14,7 +14,7 @@ async function bidAmount (event) {
         method: "PUT", 
         body: JSON.stringify({
             bid_count: bidCount + 1,
-            current_bid: currentBid + 1,
+            current_bid: currentBid + 4,
         }),
         headers: {
             "Content-type": "application/json"
@@ -22,4 +22,5 @@ async function bidAmount (event) {
     });
     const updatedBid = response.json()
     console.log(updatedBid);
+    window.location.reload();
 };
