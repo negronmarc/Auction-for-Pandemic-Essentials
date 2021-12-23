@@ -34,12 +34,17 @@ function msToTime(milliseconds) {
     seconds: seconds,
   };
 }
-setInterval(function () {
-  const timeLeft = Math.abs(new Date(auctionDate) - Date.now());
+let timeLeft = Math.abs(new Date(auctionDate) - Date.now());
+var timerInterval = setInterval(function () {
+  timeLeft--;
+  if (timeLeft===0) {
+    clearInterval(timerInterval);
+  }
   const duration = msToTime(timeLeft);
   document.querySelector(
     ".auction-date"
   ).innerText = `${duration.day}:${duration.hour}:${duration.minute}:${duration.seconds}`;
+  
 });
 
 async function bidAmount(event) {
