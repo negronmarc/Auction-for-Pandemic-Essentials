@@ -48,7 +48,6 @@
   https://github.com/sfedai
 
   ## Launch
-  https://github.com/negronmarc/Hypochondriacs
 
   https://auction-pandemic-essentials.herokuapp.com/
 

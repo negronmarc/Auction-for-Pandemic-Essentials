@@ -12,7 +12,7 @@
     "name": "Germ-X Original Hand Sanitizer, 8Fl Oz (12 Pack)",
     "starting_price": 30.99,
     "current_bid": 0,
-    "description": "Applied to the hands for the purpose of removing common pathogens (disease-causing organisms). Hand sanitizers typically come in foam, gel, or liquid form. ",
+    "description": "Applied to the hands for the purpose of removing common pathogens (disease-causing organisms).",
     "image": "germx.jpg",
     "bid_count": 0,
     "category_id": 1
@@ -27,11 +27,11 @@
     "category_id": 2
   },
   {
-    "name": "Purell Hand Sanitizing Wipes",
+    "name": "Purell Hand Sanitizing Wipes, Clean Refreshing Scent, 20 Count Travel Pack (Pack of 6)",
     "starting_price": 16.99,
     "current_bid": 0,
     "description": "Small, pre-moistened towels or towelettes that are used to clean hands.",
-    "image": "purellwipes.jpg",
+    "image": "purellwipespack.jpg",
     "bid_count": 0,
     "category_id": 2
   },
@@ -156,7 +156,7 @@
     "name": "MY MEDIC medical kit",
     "starting_price": 1200,
     "current_bid": 0,
-    "description": "A small bag or case containing medical supplies.",
+    "description": "A bag containing medical supplies.",
     "image": "medkit.png",
     "bid_count": 0,
     "category_id": 2
