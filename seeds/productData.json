@@ -22,7 +22,7 @@
     "starting_price": 25.18,
     "current_bid": 0,
     "description": "Paper sheets on a roll.",
-    "image": "cottonelle.jpg",
+    "image": "cottonelletp.jpg",
     "bid_count": 0,
     "category_id": 2
   },
@@ -40,7 +40,7 @@
     "starting_price": 15.5,
     "current_bid": 0,
     "description": "Small, pre-moistened towels or towelettes that are used to clean surfaces for the removal of dirt and bacteria, such as staph and salmonella that may have been placed on the affected surface from foods, persons or animals.",
-    "image": "clorox.jpg",
+    "image": "cloroxcleaner.jpg",
     "bid_count": 0,
     "category_id": 2
   },
@@ -85,7 +85,7 @@
     "starting_price": 6,
     "current_bid": 0,
     "description": "A disposable piece of absorbent paper, used especially as a handkerchief or for cleaning the skin.",
-    "image": "antiviraltissue.png",
+    "image": "antiviraltissuepaper.png",
     "bid_count": 0,
     "category_id": 2
   },
